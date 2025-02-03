@@ -10,25 +10,21 @@
   --white: #ffffff;
   --black: #292929;
   --grey: #cdcdcd;
+  --dark-grey-heading: #545454;
+  --dark-grey-info: #4c4c4c;
 }
+
+article {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* header */
 
 .header {
   background: url(./images/noise_transparent@2x.png),
     radial-gradient(100% 1600% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
-
-.main {
-  background: url(./images/noise_transparent@2x.png),
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
-}
-
-.header__section,
-.make-a-friend {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-/* header */
 
 .header__section {
   display: flex;
@@ -129,6 +125,11 @@
 
 /* make-a-friend section */
 
+.main__make-a-friend {
+  background: url(./images/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+
 .make-a-friend {
   display: flex;
   flex-direction: row;
@@ -185,7 +186,47 @@
   background-color: var(--primary-color-light);
 }
 
-.make-a-friend__picture {
+.make-a-friend__image {
   width: 698px;
   height: 728px;
+}
+
+/* about-the-shelter section */
+
+.about-the-shelter {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+
+  padding: 80px 40px 100px;
+}
+
+.about-the-shelter__image {
+  margin-left: 175px;
+}
+
+.about-the-shelter__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  margin: 14px 175px 0 0;
+}
+
+.about-the-shelter__heading {
+  margin-right: 60px;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: var(--dark-grey-heading);
+}
+
+.about-the-shelter__info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--dark-grey-info);
 }
