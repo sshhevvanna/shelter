@@ -291,6 +291,8 @@ article {
 .our-pets__slider-arrow {
   width: 14px;
   height: 8px;
+
+  fill: #292929;
 }
 
 .our-pets__slider-cards {
@@ -362,4 +364,60 @@ article {
 
 .our-pets__button:hover {
   background-color: var(--primary-color-light);
+}
+
+/* help-the-shelter section */
+
+.main__help-the-shelter {
+  padding: 80px 40px 100px;
+}
+
+.help-the-shelter__heading {
+  margin: 0px 450px 60px;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: var(--dark-grey-heading);
+  text-align: center;
+}
+
+.help-the-shelter__options {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+
+  margin: 0 87px;
+  align-items: center;
+}
+
+.help-the-shelter__options-list {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+}
+
+.help-the-shelter__option {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  align-items: center;
+}
+
+.help-the-shelter__options-icon {
+  width: 60px;
+  height: 60px;
+
+  fill: var(--primary-color);
+}
+
+.help-the-shelter__options-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: var(--dark-grey-heading);
 }
